@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-base: #F3EFE7;
-  --color-bg-secondary: #EAE5DC;
-  --color-bg-card: #F8F5EF;
-  --color-text-main: #111111;
-  --color-text-secondary: #4A4A46;
-  --color-text-muted: #77736C;
-  --color-accent-red: #D71920;
-  --color-accent-red-dark: #A80F15;
-  --color-accent-red-light: #E8B7B7;
-  --color-border-subtle: #CFC9BF;
-  --color-border-grid: #DDD7CE;
+  --color-dark-purple: #210B2C;
+  --color-wisteria: #BC96E6;
+  --color-sunglow: #FFD166;
+
+  --color-bg-base: #210B2C;
+  --color-bg-secondary: #210B2C;
+  --color-bg-card: #210B2C;
+  --color-text-main: #BC96E6;
+  --color-text-secondary: #BC96E6;
+  --color-text-accent: #FFD166;
+  --color-border-subtle: #BC96E6;
 
   --font-display: "Anton", "Bebas Neue", "Archivo Black", sans-serif;
   --font-bebas: "Bebas Neue", "Anton", sans-serif;
@@ -21,12 +21,12 @@
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 body {
-  background-color: #F3EFE7;
-  color: #111111;
+  background-color: #210B2C;
+  color: #BC96E6;
   font-family: var(--font-body);
   overflow-x: hidden;
 }
@@ -50,18 +50,12 @@ body {
 
 /* Editorial subtle borders */
 .border-editorial {
-  border-color: #CFC9BF;
-}
-
-/* Editorial grid lines */
-.editorial-grid-line {
-  background-color: #DDD7CE;
-  opacity: 0.5;
+  border-color: rgba(188, 150, 230, 0.25);
 }
 
 /* Focus outline for keyboard navigation */
 :focus-visible {
-  outline: 2px solid #D71920;
+  outline: 2px solid #FFD166;
   outline-offset: 3px;
 }
 
@@ -72,13 +66,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F3EFE7;
+  background: #210B2C;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #CFC9BF;
+  background: rgba(188, 150, 230, 0.35);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #D71920;
+  background: #FFD166;
 }

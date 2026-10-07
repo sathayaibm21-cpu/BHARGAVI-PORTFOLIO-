@@ -8,7 +8,7 @@ export const Skills: React.FC = () => {
   const categoryIcons = [Code, Server, Smartphone];
 
   return (
-    <section id="skills" className="py-20 lg:py-28 border-b border-[#CFC9BF] bg-[#F3EFE7]">
+    <section id="skills" className="py-20 lg:py-28 border-b border-[#BC96E6]/30 bg-[#210B2C]">
       <div className="w-full px-[4vw] sm:px-[5vw]">
         {/* Section Header */}
         <motion.div
@@ -16,25 +16,25 @@ export const Skills: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.45, ease: "easeOut" }}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-[#CFC9BF]"
+          className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-[#BC96E6]/30"
         >
           <div>
-            <div className="flex items-center gap-2 font-mono-tech text-xs text-[#D71920] uppercase font-bold mb-2">
+            <div className="flex items-center gap-2 font-mono-tech text-xs text-[#FFD166] uppercase font-bold mb-2">
               <span>03</span>
               <span>/</span>
               <span>TECHNICAL CAPABILITIES</span>
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-[#111111] uppercase tracking-tight">
+            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-[#BC96E6] uppercase tracking-tight">
               SKILLS &amp; TECHNOLOGIES
             </h2>
           </div>
-          <p className="font-mono-tech text-xs text-[#77736C] max-w-sm uppercase leading-relaxed">
+          <p className="font-mono-tech text-xs text-[#BC96E6]/70 max-w-sm uppercase leading-relaxed">
             [FULL STACK DEVELOPMENT // MOBILE ANDROID // WORKFLOW AUTOMATION]
           </p>
         </motion.div>
 
         {/* 3-Column Editorial Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border-x border-b border-[#CFC9BF] mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 border-x border-b border-[#BC96E6]/30 mt-10">
           {skills.map((category, catIdx) => {
             const Icon = categoryIcons[catIdx] || Terminal;
             return (
@@ -44,39 +44,39 @@ export const Skills: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: catIdx * 0.08 }}
-                className={`p-8 bg-[#F8F5EF] hover:bg-[#EAE5DC]/50 transition-colors relative flex flex-col justify-between ${
-                  catIdx !== skills.length - 1 ? "lg:border-r border-b lg:border-b-0 border-[#CFC9BF]" : ""
+                className={`p-8 bg-[#210B2C] hover:bg-[#BC96E6]/5 transition-colors relative flex flex-col justify-between ${
+                  catIdx !== skills.length - 1 ? "lg:border-r border-b lg:border-b-0 border-[#BC96E6]/30" : ""
                 }`}
               >
                 <div>
                   {/* Category Header */}
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex items-center gap-3">
-                      <div className="p-2 border border-[#CFC9BF] bg-[#F3EFE7] text-[#D71920]">
+                      <div className="p-2 border border-[#BC96E6]/40 bg-[#210B2C] text-[#FFD166]">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <span className="font-mono-tech text-xs text-[#77736C] uppercase font-semibold">
+                      <span className="font-mono-tech text-xs text-[#BC96E6]/70 uppercase font-semibold">
                         SECTOR 0{catIdx + 1}
                       </span>
                     </div>
                   </div>
 
-                  <h3 className="font-display text-2xl text-[#111111] uppercase tracking-wide mb-6">
+                  <h3 className="font-display text-2xl text-[#BC96E6] uppercase tracking-wide mb-6">
                     {category.category}
                   </h3>
 
                   {/* Skills List */}
-                  <div className="space-y-2 pt-2 border-t border-[#CFC9BF]">
+                  <div className="space-y-2 pt-2 border-t border-[#BC96E6]/30">
                     {category.skills.map((skill, idx) => (
                       <div
                         key={skill}
-                        className="flex items-center justify-between p-2.5 bg-[#F3EFE7] border border-[#CFC9BF] hover:border-[#111111] transition-colors group"
+                        className="flex items-center justify-between p-2.5 bg-[#210B2C] border border-[#BC96E6]/30 hover:border-[#FFD166] transition-colors group"
                       >
                         <div className="flex items-center gap-2.5">
-                          <span className="text-[#D71920] font-mono-tech text-[10px] font-bold">
+                          <span className="text-[#FFD166] font-mono-tech text-[10px] font-bold">
                             0{idx + 1}
                           </span>
-                          <span className="font-mono-tech text-xs text-[#111111] group-hover:text-[#D71920] transition-colors font-medium">
+                          <span className="font-mono-tech text-xs text-[#BC96E6] group-hover:text-[#FFD166] transition-colors font-medium">
                             {skill}
                           </span>
                         </div>

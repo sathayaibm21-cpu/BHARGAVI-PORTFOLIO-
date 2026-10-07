@@ -34,7 +34,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project, onC
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="fixed inset-0 bg-[#111111]/70 backdrop-blur-sm"
+          className="fixed inset-0 bg-[#210B2C]/90 backdrop-blur-md"
           aria-hidden="true"
         />
 
@@ -47,20 +47,20 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project, onC
           role="dialog"
           aria-modal="true"
           aria-labelledby="case-study-title"
-          className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#F8F5EF] border border-[#111111] shadow-2xl z-10 p-6 sm:p-8 md:p-10 text-[#111111]"
+          className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#210B2C] border border-[#BC96E6] shadow-2xl z-10 p-6 sm:p-8 md:p-10 text-[#BC96E6]"
         >
           {/* Header Bar */}
-          <div className="flex items-center justify-between pb-6 border-b border-[#CFC9BF] mb-8">
+          <div className="flex items-center justify-between pb-6 border-b border-[#BC96E6]/30 mb-8">
             <div className="flex items-center gap-3 font-mono-tech text-xs">
-              <span className="text-[#D71920] font-bold">[{project.number}]</span>
-              <span className="text-[#77736C]">CASE STUDY SPECIFICATION</span>
-              <span className="text-[#CFC9BF]">/</span>
-              <span className="text-[#111111] uppercase font-semibold">{project.category}</span>
+              <span className="text-[#FFD166] font-bold">[{project.number}]</span>
+              <span className="text-[#BC96E6]/80">CASE STUDY SPECIFICATION</span>
+              <span className="text-[#BC96E6]/40">/</span>
+              <span className="text-[#BC96E6] uppercase font-semibold">{project.category}</span>
             </div>
 
             <button
               onClick={onClose}
-              className="p-2 border border-[#CFC9BF] bg-[#F3EFE7] hover:bg-[#D71920] text-[#111111] hover:text-white transition-colors focus:outline-none focus:ring-1 focus:ring-[#D71920]"
+              className="p-2 border border-[#BC96E6]/40 bg-[#210B2C] hover:bg-[#FFD166] text-[#BC96E6] hover:text-[#210B2C] transition-colors focus:outline-none focus:ring-1 focus:ring-[#FFD166]"
               aria-label="Close Case Study"
             >
               <X className="w-5 h-5" />
@@ -69,42 +69,42 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project, onC
 
           {/* Title & Headline */}
           <div className="mb-8">
-            <span className="font-mono-tech text-xs text-[#D71920] uppercase tracking-wider block mb-2 font-bold">
+            <span className="font-mono-tech text-xs text-[#FFD166] uppercase tracking-wider block mb-2 font-bold">
               {project.tagline}
             </span>
             <h3
               id="case-study-title"
-              className="font-display text-4xl sm:text-5xl md:text-6xl text-[#111111] uppercase tracking-tight leading-none mb-4"
+              className="font-display text-4xl sm:text-5xl md:text-6xl text-[#BC96E6] uppercase tracking-tight leading-none mb-4"
             >
               {project.title}
             </h3>
-            <p className="text-[#4A4A46] text-base sm:text-lg leading-relaxed max-w-3xl">
+            <p className="text-[#BC96E6]/90 text-base sm:text-lg leading-relaxed max-w-3xl">
               {project.description}
             </p>
           </div>
 
           {/* Metadata Row */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 py-6 border-y border-[#CFC9BF] mb-8 font-mono-tech text-xs">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 py-6 border-y border-[#BC96E6]/30 mb-8 font-mono-tech text-xs">
             {project.year && (
               <div>
-                <span className="text-[#77736C] block mb-1">YEAR</span>
-                <span className="text-[#111111] font-semibold">{project.year}</span>
+                <span className="text-[#BC96E6]/70 block mb-1">YEAR</span>
+                <span className="text-[#BC96E6] font-semibold">{project.year}</span>
               </div>
             )}
             <div>
-              <span className="text-[#77736C] block mb-1">ROLE</span>
-              <span className="text-[#111111] font-semibold">{project.role}</span>
+              <span className="text-[#BC96E6]/70 block mb-1">ROLE</span>
+              <span className="text-[#BC96E6] font-semibold">{project.role}</span>
             </div>
             <div>
-              <span className="text-[#77736C] block mb-1">CATEGORY</span>
-              <span className="text-[#111111] font-semibold">{project.category}</span>
+              <span className="text-[#BC96E6]/70 block mb-1">CATEGORY</span>
+              <span className="text-[#BC96E6] font-semibold">{project.category}</span>
             </div>
           </div>
 
           {/* Key Features Breakdown */}
           <div className="mb-8">
-            <h4 className="font-display text-xl text-[#111111] uppercase tracking-wider mb-4 flex items-center gap-2">
-              <span className="w-2.5 h-2.5 bg-[#D71920]" />
+            <h4 className="font-display text-xl text-[#BC96E6] uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span className="w-2.5 h-2.5 bg-[#FFD166]" />
               ENGINEERED CAPABILITIES &amp; IMPLEMENTATION
             </h4>
 
@@ -112,10 +112,10 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project, onC
               {project.features.map((feature, idx) => (
                 <div
                   key={idx}
-                  className="p-4 bg-[#F3EFE7] border border-[#CFC9BF] flex items-start gap-3"
+                  className="p-4 bg-[#210B2C] border border-[#BC96E6]/40 flex items-start gap-3"
                 >
-                  <CheckCircle className="w-4 h-4 text-[#D71920] shrink-0 mt-0.5" />
-                  <span className="text-xs sm:text-sm text-[#333333] leading-relaxed">
+                  <CheckCircle className="w-4 h-4 text-[#FFD166] shrink-0 mt-0.5" />
+                  <span className="text-xs sm:text-sm text-[#BC96E6] leading-relaxed">
                     {feature}
                   </span>
                 </div>
@@ -125,15 +125,15 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project, onC
 
           {/* Technology Stack */}
           <div className="mb-10">
-            <h4 className="font-display text-xl text-[#111111] uppercase tracking-wider mb-4 flex items-center gap-2">
-              <span className="w-2.5 h-2.5 bg-[#D71920]" />
+            <h4 className="font-display text-xl text-[#BC96E6] uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span className="w-2.5 h-2.5 bg-[#FFD166]" />
               TECHNOLOGY SPECIFICATIONS
             </h4>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1.5 font-mono-tech text-xs uppercase bg-transparent border border-[#BDB7AE] text-[#222222] hover:border-[#D71920] transition-colors"
+                  className="px-3 py-1.5 font-mono-tech text-xs uppercase bg-[#210B2C] border border-[#BC96E6]/40 text-[#BC96E6] hover:border-[#FFD166] transition-colors"
                 >
                   +{tech}
                 </span>
@@ -142,12 +142,12 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project, onC
           </div>
 
           {/* Action Links */}
-          <div className="flex flex-wrap items-center justify-end gap-3 pt-6 border-t border-[#CFC9BF]">
+          <div className="flex flex-wrap items-center justify-end gap-3 pt-6 border-t border-[#BC96E6]/30">
             <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#D71920] hover:bg-[#A80F15] text-white font-mono-tech text-xs uppercase tracking-wider font-semibold transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#FFD166] hover:bg-[#FFD166]/90 text-[#210B2C] font-mono-tech text-xs uppercase tracking-wider font-semibold transition-colors"
             >
               <Github className="w-4 h-4" />
               <span>GITHUB REPOSITORY</span>
@@ -156,7 +156,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project, onC
 
             <button
               onClick={onClose}
-              className="px-6 py-3 border border-[#111111] hover:bg-[#111111] hover:text-white bg-transparent text-[#111111] font-mono-tech text-xs uppercase tracking-wider font-medium transition-colors"
+              className="px-6 py-3 border border-[#BC96E6] hover:bg-[#BC96E6] hover:text-[#210B2C] bg-transparent text-[#BC96E6] font-mono-tech text-xs uppercase tracking-wider font-medium transition-colors"
             >
               CLOSE
             </button>

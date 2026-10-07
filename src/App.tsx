@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { CinematicIntro } from "./components/CinematicIntro";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { ProfessionalSummary } from "./components/ProfessionalSummary";
@@ -11,6 +12,7 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<string>("overview");
+  const [introFinished, setIntroFinished] = useState<boolean>(false);
 
   useEffect(() => {
     const sections = ["overview", "summary", "projects", "skills", "experience", "education", "contact"];
@@ -36,7 +38,12 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#F3EFE7] text-[#111111] selection:bg-[#D71920] selection:text-white flex flex-col font-sans">
+    <div className="min-h-screen bg-[#210B2C] text-[#BC96E6] selection:bg-[#FFD166] selection:text-[#210B2C] flex flex-col font-sans">
+      {/* 3-Color Cinematic Opening Overlay */}
+      {!introFinished && (
+        <CinematicIntro onComplete={() => setIntroFinished(true)} />
+      )}
+
       {/* Top Fixed Editorial Navigation */}
       <Navbar activeSection={activeSection} />
 
@@ -49,8 +56,8 @@ export default function App() {
         <Experience />
 
         {/* Education Section */}
-        <section id="education" className="py-20 lg:py-28 border-b border-[#CFC9BF] bg-[#F3EFE7]">
-          <div className="w-full max-w-[92vw] 2xl:max-w-[1560px] mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="education" className="py-20 lg:py-28 border-b border-[#BC96E6]/30 bg-[#210B2C]">
+          <div className="w-full px-[4vw] sm:px-[5vw]">
             <Education />
           </div>
         </section>

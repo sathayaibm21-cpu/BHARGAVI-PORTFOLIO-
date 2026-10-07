@@ -48,7 +48,7 @@ export const ProfessionalSummary: React.FC = () => {
   };
 
   return (
-    <section id="summary" className="py-20 lg:py-28 border-b border-[#CFC9BF] bg-[#F3EFE7]">
+    <section id="summary" className="py-20 lg:py-28 border-b border-[#BC96E6]/30 bg-[#210B2C]">
       <div className="w-full px-[4vw] sm:px-[5vw]">
         {/* Section Header */}
         <motion.div
@@ -56,19 +56,19 @@ export const ProfessionalSummary: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.45, ease: "easeOut" }}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#CFC9BF]"
+          className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-[#BC96E6]/30"
         >
           <div>
-            <div className="flex items-center gap-2 font-mono-tech text-xs text-[#D71920] uppercase font-bold mb-2">
+            <div className="flex items-center gap-2 font-mono-tech text-xs text-[#FFD166] uppercase font-bold mb-2">
               <span>01</span>
               <span>/</span>
               <span>EXECUTIVE OVERVIEW</span>
             </div>
-            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-[#111111] uppercase tracking-tight">
+            <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-[#BC96E6] uppercase tracking-tight">
               PROFESSIONAL SUMMARY
             </h2>
           </div>
-          <p className="font-mono-tech text-xs text-[#77736C] max-w-sm uppercase leading-relaxed">
+          <p className="font-mono-tech text-xs text-[#BC96E6]/70 max-w-sm uppercase leading-relaxed">
             [FOCUS: ARCHITECTURE // RESPONSIVE INTERFACES // DATA PIPELINES // ENTERPRISE UTILITY]
           </p>
         </motion.div>
@@ -79,20 +79,20 @@ export const ProfessionalSummary: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.08 }}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 py-12 border-b border-[#CFC9BF] items-center"
+          className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 py-12 border-b border-[#BC96E6]/30 items-center"
         >
           <div className="lg:col-span-5">
-            <span className="font-mono-tech text-xs text-[#D71920] block mb-2 uppercase font-semibold">
+            <span className="font-mono-tech text-xs text-[#FFD166] block mb-2 uppercase font-semibold">
               PROFILE STATEMENT
             </span>
-            <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl text-[#111111] uppercase leading-snug">
+            <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl text-[#BC96E6] uppercase leading-snug">
               ENGINEERING RESILIENT DIGITAL PRODUCTS FROM SPECIFICATION TO PRODUCTION.
             </h3>
           </div>
 
-          <div className="lg:col-span-7 space-y-4 text-sm sm:text-base text-[#4A4A46] leading-relaxed">
+          <div className="lg:col-span-7 space-y-4 text-sm sm:text-base text-[#BC96E6]/90 leading-relaxed">
             <p>
-              <strong className="text-[#111111] font-semibold">Bhargavi A</strong> is a Full Stack Developer
+              <strong className="text-[#FFD166] font-semibold">Bhargavi A</strong> is a Full Stack Developer
               dedicated to creating scalable digital platforms, modern web interfaces, and purpose-built enterprise
               applications. Her engineering approach couples strict TypeScript typing and responsive component design with
               robust backend APIs and automated data pipelines.
@@ -111,7 +111,7 @@ export const ProfessionalSummary: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-0 border-x border-b border-[#CFC9BF] mt-10"
+          className="grid grid-cols-1 md:grid-cols-3 gap-0 border-x border-b border-[#BC96E6]/30 mt-10"
         >
           {pillars.map((pillar, idx) => {
             const Icon = pillar.icon;
@@ -119,35 +119,35 @@ export const ProfessionalSummary: React.FC = () => {
               <motion.div
                 key={pillar.title}
                 variants={itemVariants}
-                className={`p-8 bg-[#F8F5EF] hover:bg-[#EAE5DC]/60 transition-colors relative group ${
-                  idx !== pillars.length - 1 ? "md:border-r border-b md:border-b-0 border-[#CFC9BF]" : ""
+                className={`p-8 bg-[#210B2C] hover:bg-[#BC96E6]/5 transition-colors relative group ${
+                  idx !== pillars.length - 1 ? "md:border-r border-b md:border-b-0 border-[#BC96E6]/30" : ""
                 }`}
               >
                 {/* Number & Icon */}
                 <div className="flex items-center justify-between mb-8">
-                  <span className="font-mono-tech text-sm text-[#D71920] font-bold">
+                  <span className="font-mono-tech text-sm text-[#FFD166] font-bold">
                     [{pillar.num}]
                   </span>
-                  <div className="p-2.5 border border-[#CFC9BF] bg-[#F3EFE7] text-[#111111] group-hover:text-[#D71920] group-hover:border-[#D71920] transition-colors">
+                  <div className="p-2.5 border border-[#BC96E6]/40 bg-[#210B2C] text-[#FFD166] group-hover:border-[#FFD166] transition-colors">
                     <Icon className="w-5 h-5" />
                   </div>
                 </div>
 
                 {/* Content */}
-                <h4 className="font-display text-xl text-[#111111] uppercase tracking-wide mb-3 group-hover:text-[#D71920] transition-colors">
+                <h4 className="font-display text-xl text-[#BC96E6] uppercase tracking-wide mb-3 group-hover:text-[#FFD166] transition-colors">
                   {pillar.title}
                 </h4>
 
-                <p className="text-xs sm:text-sm text-[#4A4A46] leading-relaxed mb-6 font-normal">
+                <p className="text-xs sm:text-sm text-[#BC96E6]/80 leading-relaxed mb-6 font-normal">
                   {pillar.desc}
                 </p>
 
                 {/* Outlined Tags */}
-                <div className="flex flex-wrap gap-1.5 pt-4 border-t border-[#CFC9BF]">
+                <div className="flex flex-wrap gap-1.5 pt-4 border-t border-[#BC96E6]/30">
                   {pillar.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-0.5 font-mono-tech text-[10px] text-[#222222] bg-transparent border border-[#BDB7AE] uppercase tracking-wider"
+                      className="px-2 py-0.5 font-mono-tech text-[10px] text-[#BC96E6] bg-transparent border border-[#BC96E6]/40 uppercase tracking-wider"
                     >
                       {tag}
                     </span>
