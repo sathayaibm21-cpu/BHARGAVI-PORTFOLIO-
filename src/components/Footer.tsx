@@ -61,7 +61,7 @@ export const Footer: React.FC = () => {
               NAVIGATION
             </span>
             <div className="grid grid-cols-2 gap-2.5 uppercase">
-              <a href="#hero" className="hover:text-[#D71920] transition-colors">
+              <a href="#overview" className="hover:text-[#D71920] transition-colors">
                 [00] Overview
               </a>
               <a href="#summary" className="hover:text-[#D71920] transition-colors">

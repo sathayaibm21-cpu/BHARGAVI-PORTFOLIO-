@@ -20,7 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   }, []);
 
   const navLinks = [
-    { name: "Overview", href: "#hero" },
+    { name: "Overview", href: "#overview" },
     { name: "Summary", href: "#summary" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           <div className="flex items-center justify-between">
             {/* Zone 1: Brand Wordmark */}
             <a
-              href="#hero"
+              href="#overview"
               className="group flex items-center gap-3 focus:outline-none"
               aria-label="Bhargavi A Portfolio Home"
             >

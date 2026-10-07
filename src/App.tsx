@@ -10,10 +10,10 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState<string>("hero");
+  const [activeSection, setActiveSection] = useState<string>("overview");
 
   useEffect(() => {
-    const sections = ["hero", "summary", "projects", "skills", "experience", "education", "contact"];
+    const sections = ["overview", "summary", "projects", "skills", "experience", "education", "contact"];
 
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 200;

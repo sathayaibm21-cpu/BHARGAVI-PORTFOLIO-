@@ -2,7 +2,8 @@ import React from "react";
 import { motion, type Variants } from "motion/react";
 import { ArrowDown, ArrowUpRight, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { PORTFOLIO_DATA } from "../data/portfolio";
-import clientPortrait from "../assets/bhargavi_portrait_1791306509733.jpeg";
+
+const clientPortrait = "/images/bhargavi_portrait_1791306509733.jpeg";
 
 export const Hero: React.FC = () => {
   const { personal } = PORTFOLIO_DATA;
@@ -38,9 +39,10 @@ export const Hero: React.FC = () => {
 
   return (
     <section
-      id="hero"
+      id="overview"
       className="relative min-h-screen pt-20 lg:pt-24 flex flex-col justify-between border-b border-[#CFC9BF] bg-[#F3EFE7] overflow-hidden"
     >
+      <div id="hero" className="sr-only" aria-hidden="true" />
       {/* Main 12-Column Editorial Grid (Desktop: columns 1-7 typography, 8-12 photo) */}
       <div className="w-full px-[4vw] sm:px-[5vw] py-8 lg:py-12 flex-1 flex flex-col justify-center">
         <motion.div
